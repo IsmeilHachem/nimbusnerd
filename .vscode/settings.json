@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/b43f86dd-b7c7-4501-811c-c2bf1afa57a5/resourceGroups/nimbusnerd-RG/providers/Microsoft.Web/sites/nimbusnerd",
+    "appService.deploySubpath": "."
+}
