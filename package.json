@@ -1,6 +1,9 @@
 {
   "name": "nimbusnerd",
   "version": "1.0.0",
+  "engines": {
+    "node": "~18"
+  },
   "description": "",
   "main": "app.js",
   "scripts": {
