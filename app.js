@@ -5,6 +5,7 @@ const MarkdownIt = require("markdown-it");
 const md = new MarkdownIt();
 
 const app = express();
+app.set("view engine", "ejs");
 const port = 3000;
 
 app.use(express.static("public"));
@@ -12,7 +13,6 @@ app.use(express.static("public"));
 app.get("/", (req, res) => {
   fs.readdir(path.join(__dirname, "/blogs/"), (err, files) => {
     if (err) {
-      console.error(err);
       return res.sendStatus(500);
     }
     let links = files
@@ -21,26 +21,7 @@ app.get("/", (req, res) => {
         return `<a href="/blog/${name}">${name}</a>`;
       })
       .join("<br>");
-    const html = `
-      <!DOCTYPE html>
-      <html>
-      <head>
-        <link rel="stylesheet" type="text/css" href="/styles.css">
-      </head>
-      <body>
-        <div class="navbar">
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/contact">Contact</a>
-        </div>
-        <div class="container">
-          <h1>Nimbus Nerds, Unite!</h1>
-          ${links}
-        </div>
-      </body>
-      </html>
-    `;
-    res.send(html);
+    res.render('index', { links: links });
   });
 });
 
@@ -51,25 +32,10 @@ app.get("/blog/:name", (req, res) => {
     "utf8",
     (err, data) => {
       if (err) {
-        console.error(err);
         return res.sendStatus(500);
       }
       const result = md.render(data);
-      const html = `
-        <!DOCTYPE html>
-        <html>
-        <head>
-          <link rel="stylesheet" type="text/css" href="/styles.css">
-        </head>
-        <body>
-          <div class="container">
-            <a href="/" class="back-button">Back</a>
-            ${result}
-          </div>
-        </body>
-        </html>
-      `;
-      res.send(html);
+      res.render('blog', { content: result });
     }
   );
 });
