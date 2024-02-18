@@ -41,11 +41,11 @@ app.get("/blog/:name", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'about.html'));
+  res.render('about');
 });
 
 app.get("/contact", (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'contact.html'));
+  res.render('contact');
 });
 
 app.listen(process.env.PORT || 3000, () => {
