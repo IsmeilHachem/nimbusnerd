@@ -10,19 +10,19 @@ Azure describes Cloud Computing as the delivery of computing services over the i
 
 Wondering why the cloud is the perfect destination for us? Here are 7 reasons to convince you:
 
-Cost: With the cloud, we swap capital expenses for variable expenses, reducing costs and increasing productivity.
+**Cost:** With the cloud, we swap capital expenses for variable expenses, reducing costs and increasing productivity.
 
-Speed: On-demand cloud services let us provision vast amounts of computing resources in seconds.
+**Speed:** On-demand cloud services let us provision vast amounts of computing resources in seconds.
 
-Global Scale: The Cloud spans across many regions, delivering the right amount of resources from the right location.
+**Global Scale:** The Cloud spans across many regions, delivering the right amount of resources from the right location.
 
-Productivity: The Cloud handles the hardware setup and software patching, freeing us to focus on our goals.
+**Productivity:** The Cloud handles the hardware setup and software patching, freeing us to focus on our goals.
 
-Performance: Each cloud region consists of multiple data centers, reducing network latency and creating greater economies of scale.
+**Performance:** Each cloud region consists of multiple data centers, reducing network latency and creating greater economies of scale.
 
-Reliability: The Cloud mirrors data at multiple sites, making data backup and disaster recovery easier and cheaper.
+**Reliability:** The Cloud mirrors data at multiple sites, making data backup and disaster recovery easier and cheaper.
 
-Security: The Cloud offers a broad set of policies and controls to ensure our data is safe and secure.
+**Security:** The Cloud offers a broad set of policies and controls to ensure our data is safe and secure.
 
 You might be wondering, "When would I use the cloud?" Chances are, you're using it right now! If you're sending emails, editing documents, storing pictures, streaming movies, music, or games online, the cloud is the magic behind the scenes.
 
