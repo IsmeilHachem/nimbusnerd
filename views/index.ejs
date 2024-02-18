@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" type="text/css" href="/styles.css">
-</head>
-<body>
-  <%- include('navbar') %>
-  <div class="container">
-    <h1>Nimbus Nerds, Unite!</h1>
-    <%- links %>
-  </div>
-</body>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <%- include('navbar') %>
+    <div class="container">
+      <h1>Welcome to Nimbus Nerds Blog!</h1>
+      <p>Here are our latest blog posts:</p>
+      <%- links %>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Azure</a>
+        <div class="dropdown-content">
+          <a href="/blog/AzurePost1">Azure Post 1</a>
+          <a href="/blog/AzurePost2">Azure Post 2</a>
+          <!-- Add more links for each Azure blog post -->
+        </div>
+      </div>
+    </div>
+    <script src="/dropdown.js"></script>
+  </body>
 </html>
