@@ -13,9 +13,9 @@
       <div class="dropdown">
         <a href="#" class="dropbtn">Azure</a>
         <div class="dropdown-content">
-          <a href="/blog/AzurePost1">Azure Post 1</a>
-          <a href="/blog/AzurePost2">Azure Post 2</a>
-          <!-- Add more links for each Azure blog post -->
+          <% azurePosts.forEach(function(post) { %>
+            <%- post %>
+          <% }); %>
         </div>
       </div>
     </div>

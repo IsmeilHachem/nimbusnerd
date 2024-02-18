@@ -16,12 +16,21 @@ app.get("/", (req, res) => {
       return res.sendStatus(500);
     }
     let links = files
+      .filter((file) => !file.startsWith("Azure")) // Exclude Azure posts from the main list
       .map((file) => {
         const name = path.basename(file, ".md");
         return `<a href="/blog/${name}">${name}</a>`;
       })
       .join("<br>");
-    res.render('index', { links: links });
+
+    let azurePosts = files
+      .filter((file) => file.startsWith("Azure")) // Include only Azure posts
+      .map((file) => {
+        const name = path.basename(file, ".md");
+        return `<a href="/blog/${name}">${name}</a>`;
+      });
+
+    res.render("index", { links: links, azurePosts: azurePosts });
   });
 });
 
@@ -35,17 +44,17 @@ app.get("/blog/:name", (req, res) => {
         return res.sendStatus(500);
       }
       const result = md.render(data);
-      res.render('blog', { content: result });
+      res.render("blog", { content: result });
     }
   );
 });
 
 app.get("/about", (req, res) => {
-  res.render('about');
+  res.render("about");
 });
 
 app.get("/contact", (req, res) => {
-  res.render('contact');
+  res.render("contact");
 });
 
 app.listen(process.env.PORT || 3000, () => {
