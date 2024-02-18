@@ -1,26 +1,26 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    color: #333;
-  }
-  
-  p {
-    color: #666;
-  }
-  
-  a {
-    color: #0066cc;
+    background-color: #d0e7f9; /* light blue to represent the sky */
   }
   
   .container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: auto;
+    background-color: #f5f5f5; /* light gray to represent clouds */
+    border-radius: 10px; /* rounded corners for a cloud-like shape */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75); /* shadow for a 3D effect */
     padding: 20px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #333; /* dark text to represent the cloud's shadow */
+  }
+  
+  p {
+    color: #666; /* lighter text for less important elements */
+  }
+  
+  a {
+    color: #0088cc; /* links are colored like the sky */
   }
   
   .navbar {

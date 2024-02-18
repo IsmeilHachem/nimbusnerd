@@ -1,4 +1,4 @@
-The Cloud Clan! 🌩️🔍
+The Cloud Clans! 🌩️🔍
 
 Greetings, Nimbus Nerds! Fasten your seatbelts for another exhilarating ride through the cloud carnival! Having just grazed the surface of the boundless cloud cosmos, it's time to dive deeper and crack the code of the various cloud architectures and service models that exist.
 
