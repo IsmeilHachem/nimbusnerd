@@ -9,6 +9,7 @@ app.set("view engine", "ejs");
 const port = 3000;
 
 app.use(express.static("public"));
+app.use('/images', express.static('images'));
 
 app.get("/", (req, res) => {
   fs.readdir(path.join(__dirname, "/blogs/"), (err, files) => {
