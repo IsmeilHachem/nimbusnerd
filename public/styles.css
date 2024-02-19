@@ -24,7 +24,7 @@ html, body {
 .container {
   max-width: 800px; /* or any other value that suits your design */
   margin: auto;
-  background-color: rgba(245, 245, 245, 0.8);
+  background-color: rgb(110, 217, 151, 1);
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
   padding: 20px;
@@ -32,17 +32,20 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #333;
+  color: #111; /* Darker color */
+  font-size: 2em; /* Larger font size */
   transition: color 1s ease; /* Smooth transition for color changes */
 }
 
 p {
-  color: #666;
+  color: #111; /* Darker color */
+  font-size: 1.2em; /* Larger font size */
   transition: color 1s ease; /* Smooth transition for color changes */
 }
 
 a {
   color: #0088cc;
+  font-size: 1.2em; /* Larger font size */
   transition: color 1s ease; /* Smooth transition for color changes */
 }
 
