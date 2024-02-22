@@ -67,11 +67,11 @@ Now that we've charted the cosmos for you, let's prepare for the start of the cl
 
 ## The Cosmic Compass
 
-1. [Identity and Governance]
-2. [Storage]
-3. [Compute]
-4. [Networking]
-5. [Monitoring]
+1. [Identity and Governance](./Azure%20Identity%20and%20Governance)
+2. [Storage](./Azure%20Storage)
+3. [Compute](./Azure%20Compute)
+4. [Networking](./Azure%20Networking)
+5. [Monitoring](./Azure%20Monitoring)
 
 We will be following the path of this trail and making pit stops at each number, showing you how it all pieces together to form the marvelous Microsoft Azure universe.
 
