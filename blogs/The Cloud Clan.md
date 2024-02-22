@@ -1,4 +1,4 @@
-# **_The Cosmic Cloud Constellations! 🌌🔍_**
+# _The Cosmic Cloud Constellations! 🌌🔍_
 
 Salutations, Nebula Navigators! Secure your space helmets for another thrilling voyage through the cloud cosmos! Having just skimmed the surface of the infinite cloud universe, it's time to warp deeper and decipher the code of the various cloud architectures and service models that exist.
 

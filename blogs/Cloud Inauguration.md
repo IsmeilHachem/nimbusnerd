@@ -1,4 +1,4 @@
-# **_Welcome to the Cosmic Cloud Odyssey! 🚀☁️_**
+# _Welcome to the Cosmic Cloud Odyssey! 🚀☁️_
 
 Salutations, interstellar explorers! I'm Ismeil Hachem, your captain on this exhilarating voyage through the boundless, brilliant cosmos of cloud computing. Forget about those terrestrial clouds, we're here to discuss the real marvel - the digital cloud!
 

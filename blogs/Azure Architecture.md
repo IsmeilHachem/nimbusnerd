@@ -1,4 +1,4 @@
-# The Azure Universe Unveiled! 🌌🔍
+# _The Azure Universe Unveiled! 🌌🔍_
 
 Greetings, Cosmic Cloud Cadets! Prepare for a thrilling voyage through the Azure universe! Azure, like a cosmic constellation, is divided into 5 celestial sectors, each a distinct entity in the vast expanse of the Azure cosmos:
 
