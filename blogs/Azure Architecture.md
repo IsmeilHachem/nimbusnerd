@@ -12,7 +12,7 @@ Let's delve into each sector, each a unique world with its own set of features a
 
 ## Identity and Governance
 This sector is the cornerstone of the Azure universe, governing the identity and access management. It includes:
-- Azure AD
+- Entra ID
 - Subscriptions
 - Tags
 - Azure Policies
