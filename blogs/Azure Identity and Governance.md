@@ -39,4 +39,4 @@ Role-Based Access Control (RBAC) is the cloud's way of managing access and the a
 
 It's best to practice the principle of least privilege, ensuring each astronaut has just enough access to perform their tasks.
 
-Phew! That's quite a bit to take in, isn't it? But fear not, fellow space traveler! With this knowledge, you're now better equipped to navigate the cosmos of the cloud. In our next cosmic conversation, we'll venture into the world of Storage! Until then, keep exploring, and may the cloud be with you, young grasshopper! 🚀
+Wow, that was an interstellar journey, wasn't it? But don't worry, fellow cosmic voyager! Armed with this knowledge, you're now ready to traverse the vast expanse of the cloud cosmos more confidently. In our next celestial chat, we'll embark on a journey through the universe of Storage! Until then, keep your curiosity ignited, continue your exploration, and remember - in the infinite cosmos of cloud computing, the cloud is your trusted intergalactic ally. Until our next adventure, young grasshopper! 🚀✨

@@ -95,4 +95,4 @@ Couple tools we'll talk about are Azure Storage Explorer and Import/Export servi
 
 AzCopy is a command used to copy data to/from blobs and file storage. This is an ideal tool for incremental copy scenarios.
 
-That's a whole lot of information! Let's take a snack break before departing to the next adventure. Our next stop on this journey will be Compute and it shouldn't be taken lightly. Until then, keep exploring, and may the cloud be with you, young grasshopper! 🚀
+Indeed, that was a galaxy of knowledge! Let's take a moment for a cosmic snack break before we launch into our next adventure. Our next destination in this interstellar journey is the Compute constellation, a realm not to be underestimated. Until our next celestial encounter, keep your curiosity ignited, continue your exploration, and remember - in the infinite cosmos of cloud computing, the cloud is your trusted intergalactic ally. Until our next adventure, young grasshopper! 🚀✨

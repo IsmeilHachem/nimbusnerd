@@ -43,15 +43,13 @@ This sector is the interstellar highway of the Azure universe, managing network 
 - VNets
 - NSG
 - Azure Firewall
-- Azure DNS
-- VNet Peering
+- Domain Name System (DNS) and Azure DNS
 - VPN Gateway
-- ExpressRoute and Virtual WAN
+- ExpressRoute
 - Network Routing and Endpoints
 - Azure Load Balancer
 - Azure App Gateway
 - IP Schema
-- DNS
 - NVA
 
 ## Monitoring
@@ -75,5 +73,4 @@ Now that we've charted the cosmos for you, let's prepare for the start of the cl
 
 We will be following the path of this trail and making pit stops at each number, showing you how it all pieces together to form the marvelous Microsoft Azure universe.
 
-Now, let us initiate our journey at the first stop:
-Identity and Governance! Until then, keep exploring, and may the cloud be with you, young grasshoppers! 🚀☁️
+Now, let's ignite our engines and set course for our first celestial destination: Identity and Governance! Until our next interstellar interaction, keep your curiosity aflame, continue your cosmic journey, and remember - in the boundless universe of cloud computing, the cloud is your faithful galactic guide. Until our next adventure, young grasshopper! 🚀✨
