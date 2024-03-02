@@ -1,6 +1,6 @@
 # 🚀 Azure Storage: The Galactic Vault
 
-In the infinite cosmos of Azure, the Storage Account is our celestial vault. It's a colossal, scalable storage system for objects and files, capable of storing messages and NoSQL data. You might ponder why to choose this when there are other storage options in the cosmos. The advantages of Azure's Storage account are:
+Salutations, interstellar explorers! In the infinite cosmos of Azure, the Storage Account is our celestial vault. It's a colossal, scalable storage system for objects and files, capable of storing messages and NoSQL data. You might ponder why to choose this when there are other storage options in the cosmos. The advantages of Azure's Storage account are:
 
 - Durability and high availability
 - Detailed access control for security
