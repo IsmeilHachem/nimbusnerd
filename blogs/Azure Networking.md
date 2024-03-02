@@ -1,61 +1,85 @@
-# 🌌 Welcome to the Galactic Network! 🌌
+# 🚀 Welcome to the Interstellar Journey of Networking! 🌌
 
-In this vast cosmos, we have many celestial bodies to visit. Our cosmic tour includes:
+Greetings, cosmic voyager! 🌠 Prepare to embark on a thrilling adventure through the bustling cosmos of networking. Our star map reveals a multitude of celestial bodies to explore:
 
 - 🌐 Virtual Networks (Vnets)
 - 🛡️ Network Security Groups (NSG)
 - 🔥 Azure Firewall
-- 📞 Domain Name System (DNS) and Azure DNS
+- 📬 Domain Name System (DNS) and Azure DNS
 - 🚦 Network Routing and Endpoints
 - 🚄 ExpressRoute
 - ⚖️ Azure Load Balancer (ALB)
-- 🌐 Azure Application Gateway (AAG)
-- 📝 IP Schema
-- 📦 Network Virtual Appliance (NVA)
+- 🚪 Azure Application Gateway (AAG)
+- 🗺️ IP Schema
+- 🧰 Network Virtual Appliance (NVA)
 
 ## 🌐 Virtual Networks (Vnets)
 
-Think of a Vnet as a galaxy, and within each galaxy are solar systems, in this case, subnets. Subnets are a range of IP addresses within a Vnet address space. A Vnet can have many subnets, just need to be aware of not overlapping IP ranges with other subnets. Each subnet can have its own security policies, just like each solar system can have its own laws of physics.
+Imagine a Vnet as a galaxy, and within each galaxy are solar systems, or in our case, subnets. Subnets are clusters of IP addresses within the vast expanse of a Vnet. A single Vnet can host countless subnets, just be cautious not to let their IP ranges collide!
 
-## 🛡️ Network Security Groups (NSGs)
+By default, Azure reserves five IP addresses in every subnet:
 
-These cosmic shields allow or deny network traffic into your subnets. They get placed on either the subnet or the network interface card that sits on the virtual machine. They are like the guardians of the galaxy, protecting your resources from unwanted traffic.
+1. x.x.x.0 - the network address, like the name of your galaxy
+2. x.x.x.1 - the default gateway, your trusty spaceship
+3. x.x.x.2 and x.x.x.3 - Azure DNS IPs, your interstellar GPS
+4. x.x.x.255 - the Broadcast address, your galaxy-wide radio station
+
+We have two types of IP addresses; public (like popular tourist destinations) and private (like secret hideaways). They can be static (permanent) or dynamic (changing). Static IPs are perfect for DNS name resolution, TSL/SSL certs linked to an IP, and firewall rules based on IP ranges. To assign a static IP, create a public IP and it will be assigned. For dynamic, you can only do it after a public IP is associated with an Azure resource and started for the first time. The address will change once the virtual machine is deallocated.
+
+But what if we want to travel from one galaxy (Vnet) to another? Enter Vnet peering! This is like building a wormhole between two galaxies:
+
+1. Regional Vnet - connecting galaxies in the same quadrant
+2. Global Vnet - connecting galaxies across different quadrants
+
+Vnet peering involves a Vnet gateway, which is like a space station that facilitates travel between two galaxies. The gateway also allows Vnets to communicate outside of the peering, such as:
+
+- Site-to-site to connect to your home base
+- Vnet-to-vnet
+- Point-to-site
+
+Remember, Vnet peering is non-transitive. If you have three galaxies (Vnets), and Galaxy A is connected to Galaxy B, and Galaxy B is connected to Galaxy C, Galaxy A and Galaxy C aren't automatically connected. You must establish a direct wormhole (peer them) or configure a user-defined route to point the Vnet to a NVA or Vnet gateway.
+
+## 🛡️ Network Security Groups (NSG)
+
+Next, we encounter Network Security Groups (NSGs), the vigilant space police of our Azure cosmos. They're responsible for maintaining law and order by enforcing security rules at the network level. NSGs have rules, much like a space code of conduct, that allow or deny traffic to resources.
+
+NSGs operate at two levels:
+
+1. Subnet level - like a force field around an entire solar system
+2. Network Interface level - like a personal shield around your spaceship
+
+Remember, the space police (NSG) always prioritize personal safety (Network Interface level) over general security (Subnet level).
 
 ## 🔥 Azure Firewall
 
-This is a stateful, highly available, and scalable application that can be integrated with azure monitor for logging and analytics. This application allows you to centrally create allow and/or deny rules and uses threat intelligence-based filtering to allow for easier debugging. It's like the cosmic police, keeping an eye on all the traffic and making sure everything is in order.
+As we venture deeper into the cosmos, we encounter the formidable Azure Firewall, a fully stateful firewall as a service. Think of it as the colossal space fortress that protects your Azure Virtual Network. It provides high-level threat intelligence, using Microsoft Threat Intelligence, the galaxy's top intelligence agency.
 
-## 📞 Domain Name System (DNS) and Azure's DNS
+## 📬 Domain Name System (DNS) and Azure DNS
 
-DNS is basically the phonebook of the internet. It translates domain names into IP addresses so web browsers can load up the content. Azure DNS helps us host DNS records for our domains. It's like the intergalactic directory, helping us find the right planets (websites) we want to visit.
+Navigating the cosmos can be tricky, but that's where the Domain Name System (DNS) and Azure DNS come in. They're like the interstellar postal service, translating domain names to IP addresses so your messages (data packets) reach the right destination.
 
 ## 🚦 Network Routing and Endpoints
 
-System routes direct traffic between virtual machines, on-premise, and the internet. User-defined routes are more customizable and define routes that specify the next hop in traffic flow. It's like the cosmic GPS, guiding our spaceships (data packets) to their destinations.
+In the vast expanse of the cosmos, knowing the best route is crucial. Network Routing and Endpoints are like your trusty star maps and navigation systems, guiding your data packets through the most efficient routes.
 
 ## 🚄 ExpressRoute
 
-This resource allows you to connect privately between azure and on-premise. Instead of going over the internet, it goes directly through the backbone of the cloud. It's like a wormhole, allowing us to travel quickly and securely between different parts of the cosmos.
+Sometimes, the regular cosmic highways just don't cut it. For those high-priority, confidential missions, we have ExpressRoute, a private, dedicated superhighway that connects your on-premises networks to Azure.
 
-## ⚖️ Azure Load Balancer (ALB)
+## ⚖️ Azure Load Balancer (ALB) and Azure Application Gateway (AAG)
 
-This resource helps handle how traffic is distributed to the backend. We use health probes to ensure the backend is healthy to receive traffic. It's like the traffic controller of the galaxy, making sure all spaceships (data packets) are evenly distributed and the traffic flows smoothly.
+In our bustling cosmos, traffic management is key. The Azure Load Balancer (ALB) and Azure Application Gateway (AAG) are like advanced traffic control systems, ensuring smooth and efficient traffic flow, preventing congestion and crashes.
 
-## 🌐 Azure Application Gateway (AAG)
+## 🗺️ IP Schema
 
-This resource manages requests sent to web applications from client applications. It will route traffic to a pool of webservers based on the URL of the request. It's like the interstellar post office, making sure all messages (requests) are delivered to the right planets (servers).
+Every explorer needs a good understanding of the cosmic coordinates, or in our case, the IP Schema. It's the system that assigns unique coordinates (IP addresses) to every object in the cosmos.
 
-## 📝 IP Schema
+## 🧰 Network Virtual Appliance (NVA)
 
-This describes Azure's IP design which uses private IPs. There are three ranges of non-routable IPs for the internal network. 
-1. 10.0.0.0 - 10.255.255.255
-2. 172.16.0.0 - 176.31.255.255
-3. 192.168.0.1 - 192.168.255.255
+Last but not least, we have the Network Virtual Appliance (NVA), a virtual device that performs network functions like firewall, WAN optimization, and routing. Think of it as your all-in-one space utility tool.
 
-It's like the cosmic map, showing us the layout of the galaxy and where each planet (IP address) is located.
+And that, dear space explorer, brings us to the end of our thrilling journey through the Azure networking cosmos. 🌌
 
-## 📦 Network Virtual Appliance (NVA)
+Next on our itinerary? The fascinating world of monitoring. 🖥️🔍 While not a part of networking, monitoring is like the high-tech control center of your space mission, providing you with real-time updates and insights about your journey. It's an essential tool for any Azure explorer, helping you keep track of your resources, optimize your performance, and navigate the cosmos with confidence. So stay tuned for our next adventure! 🌠
 
-This is a virtual machine that controls the flow of traffic by controlling the routing. It acts as a router forwarding requests between subnets. It's like the cosmic traffic cop, directing traffic and making sure everything flows smoothly.
-
-That's the end of our interstellar voyage through the Galactic Network! Keep your curiosity alive, continue exploring the infinite cosmos of cloud computing, and remember - in the vast expanse of the universe, the cloud is your cosmic companion. Until our next adventure, young grasshopper! 🚀✨
+Until then, keep exploring, and may the cloud be with you, young grasshopper! 🚀

@@ -1,6 +1,6 @@
 # 🚀 Identity and Governance: The Launchpad of Our Journey
 
-Howdy Astronauts! In the vast cosmos of the cloud, our journey begins with Identity and Governance. This is the control center, deciding who gets to board the spaceship and how much control they have over its systems. The key components of this cosmic control center are:
+Salutations, cosmic voyagers! 🚀 Buckle up and prepare for lift-off as we embark on an exhilarating journey through the infinite cosmos of the cloud. Our first destination? The Identity and Governance galaxy! This is the interstellar command center, determining who gets the golden ticket to board our spaceship and the extent of their control over its high-tech systems. The key components of this cosmic command center include:
 
 - Entra Id
 - Subscriptions
