@@ -1,4 +1,4 @@
-# 🚀 Welcome to the Interstellar Journey of Networking! 🌌
+# 🚀 Welcome to the Interstellar Journey of Networking!
 
 Greetings, cosmic voyager! 🌠 Prepare to embark on a thrilling adventure through the bustling cosmos of networking. Our star map reveals a multitude of celestial bodies to explore:
 
@@ -82,4 +82,4 @@ And that, dear space explorer, brings us to the end of our thrilling journey thr
 
 Next on our itinerary? The fascinating world of monitoring. 🖥️🔍 While not a part of networking, monitoring is like the high-tech control center of your space mission, providing you with real-time updates and insights about your journey. It's an essential tool for any Azure explorer, helping you keep track of your resources, optimize your performance, and navigate the cosmos with confidence. So stay tuned for our next adventure! 🌠
 
-Until then, keep exploring, and may the cloud be with you, young grasshopper! 🚀
+Until then, keep exploring, and may the cloud be with you, young grasshopper! 🚀🌌
